@@ -928,6 +928,18 @@ class QnAPlugin extends Gdn_Plugin {
       }
    }
 
+
+    public function DiscussionsController_Render_Before($Sender) {
+    if (C('Plugins.QnA.UseBigButtons')) {
+    $QuestionModule = new NewQuestionModule($Sender, 'plugins/QnA');
+    $Sender->AddModule($QuestionModule);
+    }
+    if ($Sender->Data('Discussion.Type') == 'Question') {
+    $Sender->SetData('_CommentsHeader', T('Answers'));
+    }
+    }
+
+
    /**
     * Add 'Ask a Question' button if using BigButtons.
     */
