@@ -11,7 +11,9 @@ I only made code changes specified by peregrine as "The Big Button option part A
 Compare original and remixed here: https://github.com/HelpGiveThanks/addons/compare/vanilla:2.1...2.1
 
 In addition to these code changes, peregrine also writes that you'll need to add these lines to your config.php file:
-
+```
 $Configuration['Plugins']['QnA']['UseBigButtons'] = TRUE;
-
+```
+```
 $Configuration['Modules']['Vanilla']['Panel'] = array('MeModule', 'UserBoxModule', 'GuestModule', 'NewDiscussionModule', 'NewQuestionModule','DiscussionFilterModule', 'SignedInModule', 'Ads');
+```
