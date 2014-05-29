@@ -1,8 +1,9 @@
-The Q&A plugin is licensed under a GNU GPL2 license as noted in this post by Linc http://vanillaforums.org/discussion/comment/208796#Comment_208796
+The Q&A plugin by Todd is licensed under a GNU GPL2 license as noted in this post by Linc http://vanillaforums.org/discussion/comment/208796#Comment_208796
 
-It is provided here by David Matson to save you time downloading and changing its code to provide the big 'Ask a Question' button.
+Check for updates and ask questions about this plugin on its author's page: http://vanillaforums.org/addon/734/q-a
 
-Check for updates and ask questions about this plugin on its authors page: http://vanillaforums.org/addon/734/q-a
+It is provided as a convenience by David Matson in its current remixed form to save you time downloading and changing its code to put a big 'Ask a Question' button on your Vanilla forum.
+
 
 *About the Changes*
 
