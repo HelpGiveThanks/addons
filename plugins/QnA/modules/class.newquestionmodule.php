@@ -14,8 +14,13 @@ class NewQuestionModule extends Gdn_Module {
    }
    
    public function ToString() {
-      $HasPermission = Gdn::Session()->CheckPermission('Vanilla.Discussions.Add', TRUE, 'Category', 'any');
-      if ($HasPermission)
-             echo Anchor(T('Ask a Question'), '/post/question', 'Button BigButton NewQuestion');
-   }
-}
+          $HasPermission = Gdn::Session()->CheckPermission('Vanilla.Discussions.Add', TRUE, 'Category', 'any');
+      $Category = Gdn::Controller()->Data('Category.UrlCode');
+          if ($Category)
+             $Category = '/'.rawurlencode($Category);
+          else
+             $Category = '';
+     if ($HasPermission)
+             echo Anchor(T('Ask a Question'), 'post/question'. $Category, 'Button BigButton NewQuestion');
+       }
+    }
